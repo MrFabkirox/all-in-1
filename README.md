@@ -3,16 +3,16 @@
 
 h w/all-in-1
 
-nvm use 6.10
-
-git init
-.gitignore
+nvm: 6.10
+serverless: runtime: nodejs6.10
+circleci: node:7.10
 
 npm install -g serverless
 serverless create -t aws-nodejs
 
 handler.js
 serverless.yml
+.circleci/config.yml
 
 In the aws console:
 Name/My Security Credentials/Access keys
