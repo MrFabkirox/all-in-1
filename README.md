@@ -23,6 +23,7 @@ serverless config credentials --provider aws --key AXXXXXXXXIA --secret Fxxxxxxx
 
 serverless deploy
 https://17lbza6vgc.execute-api.us-east-1.amazonaws.com/dev/users/create
+https://17lbza6vgc.execute-api.us-east-1.amazonaws.com/dev/imageResize
 
 serverless deploy --stage pre-prod
 https://2ev3a68oql.execute-api.us-east-1.amazonaws.com/pre-prod/users/create
