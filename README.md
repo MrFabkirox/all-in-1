@@ -17,7 +17,7 @@ serverless.yml
 In the aws console:
 Name/My Security Credentials/Access keys
 
-serverless config credentials --provider aws --key AXXXXXXXXIA --secret FxxxxxxxxuTp
+serverless config credentials --provider aws --key XXXXXXXX --secret xxxxxxxxu
 
 /home/fab/.aws/credentials
 
