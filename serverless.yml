@@ -20,7 +20,7 @@ service: all-in-1
 
 provider:
   name: aws
-  runtime: nodejs10.4
+  runtime: nodejs6.10
 
 # you can overwrite defaults here
 #  stage: dev

@@ -4,7 +4,7 @@ module.exports.hello = (event, context, callback) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: 'Serverless v1.0! Function executed ok in all-in-1 v1 serverless lambda app',
+      message: 'Deployed to stage, Function executed ok in all-in-1 v1 serverless lambda app',
       input: event,
     }),
   };
