@@ -1,0 +1,27 @@
+{
+  "name": "all-in-1",
+  "version": "1.0.0",
+  "description": "all-in-1-desc",
+  "main": "handler.js",
+  "dependencies": {
+    "jest": "^23.1.0",
+    "serverless": "^1.27.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrFabkirox/all-in-1.git"
+  },
+  "keywords": [
+    "keywords-in-1"
+  ],
+  "author": "Fabrice Esope",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrFabkirox/all-in-1/issues"
+  },
+  "homepage": "https://github.com/MrFabkirox/all-in-1#readme"
+}
