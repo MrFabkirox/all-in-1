@@ -19,7 +19,7 @@ module.exports.imageResize = (event, context, callback) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: 'image have been resized',
+      message: 'all-in-1 image have been resized deployed through ci',
     }),
   };
 
