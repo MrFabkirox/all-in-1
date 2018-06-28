@@ -22,3 +22,9 @@ functions:
           path: /imageResize
           method: get
 
+  query:
+    handler: handler.query
+    events:
+      - http:
+          path: query
+          method: get
