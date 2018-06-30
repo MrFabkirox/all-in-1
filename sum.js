@@ -2,9 +2,9 @@
 
 function sum(a, b) {
 
-  console.log('double quotes');
+  console.log('double quotes')
 
-  return a + b;
+  return a + b
 }
-module.exports = sum;
+module.exports = sum
 
