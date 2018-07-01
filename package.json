@@ -9,7 +9,7 @@
     "serverless": "^1.27.3"
   },
   "devDependencies": {
-    "eslint": "^5.0.0",
+    "eslint": "^5.0.0"
   },
   "scripts": {
     "test": "jest"
