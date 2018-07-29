@@ -1,0 +1,11 @@
+{
+  "name": "speaking-javascript",
+  "version": "1.0.0",
+  "description": "speaking-node",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
