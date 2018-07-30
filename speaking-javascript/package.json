@@ -7,5 +7,9 @@
     "test": "jest"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^3.1.0",
+    "sprintf-js": "^1.1.1"
+  }
 }

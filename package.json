@@ -4,6 +4,8 @@
   "description": "all-in-1-desc",
   "main": "handler.js",
   "dependencies": {
+    "ajv": "^6.5.2",
+    "commander": "^2.16.0",
     "graphql": "^0.13.2",
     "jest": "^23.1.0",
     "serverless": "^1.27.3"
