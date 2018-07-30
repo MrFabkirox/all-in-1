@@ -11,8 +11,9 @@ console.log(typeof(entryString))
 console.log( ' ---------------- ' )
 
 var toFind = process.argv[3]
-var toFindString = toFind.toString
+// var toFindString = toFind.toString
 
 console.log(' entry: ' + entry + ' to compare with: '+ toFind )
 
-entryString.localCompare(toFind)
+console.log(entry.localeCompare('something'))
+

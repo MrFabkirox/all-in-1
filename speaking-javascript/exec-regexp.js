@@ -1,7 +1,6 @@
 var entry = process.argv[2]
 var toFind = process.argv[3]
 
-
 console.log(' entry: ' + entry + 'second char : '+ entry.charAt(1) )
 console.log('toFind: ' + toFind)
 
