@@ -1,5 +1,4 @@
-// simple page to display
-
+// simple page to display ko
 var http = require('http')
 
 http.createServer(function (req, res) {
@@ -20,6 +19,7 @@ function buildHtml(req) {
   // concatenate header string
   // concatenate body string
 
-  return '<!DOCTYPE html>'
-       + '<html><head>' + header + '</head><body>' + body + '</body></html>'
+  return '<!DOCTYPE html>' +
+    '<html><head>' + header + '</head><body>' 
+    + body + '</body></html>'
 }

@@ -1,6 +1,6 @@
 console.log( ' Enter 3 num : ' )
 
-var num = [ process.argv[2] , process.argv[3], process.argv[4] ]
+var num = [process.argv[2],process.argv[3],process.argv[4]]
 
 console.log( ' Num : ' + num )
 
@@ -14,10 +14,8 @@ function findEvenNum(arrayNum) {
         console.log('Even number found at ' + elem )
         break loop
       }
-      console.log( ' Did not display ' + arrayNum[i+2] )
+      console.log( ' Did not display num [' + (i+3) +']' )
     }
   }
 }
-
 findEvenNum(num)
-

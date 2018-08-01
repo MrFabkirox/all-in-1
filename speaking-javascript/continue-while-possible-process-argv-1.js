@@ -1,13 +1,10 @@
-// var name = ''
-// console.log('Enter names, and then enter "done" when done')
-
 process.stdin.resume()
 process.stdin.setEncoding('utf8')
 var util = require('util')
 
 process.stdin.on('data', function (text) {
 
-  var names = [ '', '']
+  var names = [ '', ''] // how to store in ?
 
   console.log('received data:', util.inspect(text))
   if (text === 'quit\n') {
@@ -16,7 +13,7 @@ process.stdin.on('data', function (text) {
 })
 
 function done() {
-  console.log('Now that process.stdin is paused, there is nothing more to do.')
+  console.log('process.stdin is paused, nothing more to do.')
   process.exit()
 }
 

@@ -4,7 +4,6 @@ var toFind = process.argv[3]
 console.log(' entry: ' + entry + 'second char : '+ entry.charAt(1) )
 console.log('toFind: ' + toFind)
 
-
 console.log( '----------------------------' )
 console.log(/x/.exec('aaa'))
 console.log('/x/ in aaa : ' + /x/.exec('aaa'))

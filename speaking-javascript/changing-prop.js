@@ -1,5 +1,3 @@
-// changing properties
-
 var person1 = {
   name: 'boby',
   age: 22

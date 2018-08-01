@@ -4,28 +4,25 @@ prompt.start()
 
 var ifDone = ''
 // var done = false
+var count = 0
+var names = []
 
 console.log( 'Enter name or done : ' )
-
-// var line
-// 
-// do {
-//   line =  prompt('Enter a number: ')
-// } while (!/^[0-9]+$/.test(line))
 
 function ask() {
   prompt.get(['name'], function(err, result) {
     console.log('Name: ' + result.name)
     ifDone = result.name
+    count+=1
+    names[count] = result.names // again not working
+
     if (ifDone === 'done') {
       console.log('We are done.')
     } else {
       ask()
     }
   })
-
-
+  console.log('Entered: ' + names)
 }
-
 ask()
 
