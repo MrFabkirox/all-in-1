@@ -1,20 +1,23 @@
-process.stdin.resume()               // can enter values
-process.stdin.setEncoding('utf8')    // but can t store
-var util = require('util')           // them for now
-var names = []
+process.stdin.resume()
+process.stdin.setEncoding('utf8')
+var util = require('util') // util.inspect show all \r
+var names = [ 'init' ]
+var newSize = names.length
 
-for (var i=0;i<3;i++) {
+for (var i=0;i<newSize;i++) {
   process.stdin.on('data', function (text) {
     console.log('received data:', util.inspect(text))
+    var cleanText = text.replace(/(\r\n|\n|\r)/gm,'')
+    newSize = names.push(cleanText)
+    console.log('Names array : ' + names )
     if (text === 'quit\n') {
+      names.shift()
       done()
-    } else {
-      names[i] = util.inspect(text)
     }   
   })
 }
 function done() {
-  console.log('process.stdin is paused,' +
-    'nothing more to do, entered ' + names)
+  console.log('process.stdin is stopped,' +
+    'nothing more to do, final names:\r' + names)
   process.exit()
 }
