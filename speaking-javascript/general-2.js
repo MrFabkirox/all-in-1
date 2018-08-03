@@ -19,4 +19,3 @@ function id(x) {
 console.log( typeof id )
 console.log( id instanceof Function )
 console.log( ' ----------------------------------------- ' )
-

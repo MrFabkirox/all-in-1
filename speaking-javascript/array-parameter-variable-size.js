@@ -11,8 +11,6 @@ function addName() {
   }
   
   console.log(names)
-  
   names.push('push', 'added', 'name')
 }  
 addName()
-

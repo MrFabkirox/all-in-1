@@ -13,6 +13,8 @@ function createArray() {
   return num
 }
 function findEvenNum(arrayNum) {
+  console.log( 'argument [0] ' + arguments[0]
+    + 'arguments.callee : ' + arguments.callee )
   loop: {
     for(var i=0; i<arrayNum.length ; i++ ) {
       var elem = arrayNum[i]
