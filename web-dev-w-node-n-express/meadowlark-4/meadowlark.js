@@ -43,7 +43,11 @@ function getWeatherData(){
         iconUrl: 'http://icons-ak.wxug.com/i/c/k/rain.gif',
         weather: 'Light Rain',
         temp: '55.0 F (12.8 C)',
-      }, ], }; } app.set('port', process.env.PORT || 3000);
+      },
+    ],
+  };
+}
+app.set('port', process.env.PORT || 3000);
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
