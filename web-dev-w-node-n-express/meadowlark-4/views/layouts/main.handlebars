@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>Meadowlark4 Travel</title> 
+  {{{_sections.head}}}
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  {{#if showTests}}
+    <link rel="stylesheet" href="/vendor/mocha.css"> 
+  {{/if}}
+
+</head>
+
+<body>
+
+  {{> menu }}
+
+  <header><img src="/img/tigerlogo.png" alt="Meadowlark Travel Logo"></header>
+  {{{body}}}
+
+  <p>main handlebars m4 17</p>
+
+  <script src="//code.jquery.com/jquery-2.0.2.min.js"></script>
+  {{{_sections.jquery}}}
+
+{{#section 'jquery'}}
+  $(document).ready(function(){
+    var nurseryRhymeTemplate = Handlebars.compile(
+      $('#nurseryRhymeTemplate').html());
+    });
+  {{/section}}
+
+  {{> footer }}
+
+  {{#if showTests}}
+    <div id="mocha"></div>
+    <script src="/vendor/mocha.js"></script>
+    <script src="/vendor/chai.js"></script>
+    <script>
+      mocha.ui('tdd');
+      var assert = chai.assert;
+    </script>
+    <script src="/qa/tests-global.js"></script>
+    {{#if pageTestScript}}
+      <script src="{{pageTestScript}}"></script>
+    {{/if}}
+    <script>mocha.run();</script>
+  {{/if}}
+
+  {{> weather }}
+
+</body>
+</html>

@@ -12,5 +12,7 @@ function addName() {
   
   console.log(names)
   names.push('push', 'added', 'name')
+
+  console.log(names)
 }  
 addName()
