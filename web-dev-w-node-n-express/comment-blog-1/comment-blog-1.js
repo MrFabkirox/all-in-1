@@ -5,8 +5,16 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.static(__dirname + '/public'));
  
 var handlebars = require('express3-handlebars').create({
-  defaultLayout:'main'
+  defaultLayout:'main',
+  helpers: {
+    section: function(name, options){
+      if(!this._sections) this._sections = {};
+      this._sections[name] = options.fn(this);
+      return null;
+    }
+  }
 });
+
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
@@ -53,6 +61,9 @@ app.use(function(req, res, next){
   next();
 });
 
+app.get('/jquery-test', function(req, res) {
+  res.render('jquery-test');
+});
 app.get('/', function(req, res) {
   res.render('home');
 });
@@ -157,6 +168,18 @@ app.get('/api/tours', function(req, res){
 //       res.json({error: 'No such tour exists.'});
 //     }
 // });
+
+app.get('/nursery-rhyme', function(req, res){
+  res.render('nursery-rhyme');
+});
+app.get('/data/nursery-rhyme', function(req, res){
+  res.json({
+    animal: 'squirrel',
+    bodyPart: 'tail',
+    adjective: 'bushy',
+    noun: 'heck',
+  });
+});
 
 app.use(function(req, res, next){ res.type('text/plain');
   res.status(404);
